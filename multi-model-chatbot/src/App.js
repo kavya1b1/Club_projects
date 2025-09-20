@@ -35,7 +35,8 @@ function generateChatId() {
 }
 
 function formatTime(d) {
-  return d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+  const dt = (d instanceof Date) ? d : new Date(d);
+  return dt.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 }
 
 function App() {

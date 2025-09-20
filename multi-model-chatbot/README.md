@@ -5,7 +5,7 @@ Users can select and switch between several free & preview AI models seamlessly!
 
 
 ✨ Features
-
+.
 🎨 Beautiful animated bubble background and modern dark chat UI
 
 💬 Real-time chat with avatars, timestamps, and typing indicator

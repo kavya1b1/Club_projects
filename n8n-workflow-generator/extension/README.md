@@ -22,14 +22,17 @@ Simple, user-friendly interface as a Chrome extension popup. 🖥️
 
 How it Works ⚙️
 
-. Screenshot 2025-09-20 at 11 20 29 am
+<img width="395" height="387" alt="Screenshot 2025-09-20 at 11 20 29 am" src="https://github.com/user-attachments/assets/a9129b4f-49d3-4ae6-a6cd-496a8aa55602" />
+
+
+.
+<img width="1440" height="900" alt="Screenshot 2025-09-20 at 11 26 53 am" src="https://github.com/user-attachments/assets/07b95cf5-f41d-42b8-b5aa-eae7403a7eb0" />
+
 
 .
 
-Screenshot 2025-09-20 at 11 26 53 am
-.
+<img width="1440" height="900" alt="Screenshot 2025-09-20 at 11 27 26 am" src="https://github.com/user-attachments/assets/8091cba9-dde0-4529-85a6-4678bc4fac06" />
 
-Screenshot 2025-09-20 at 11 27 26 am
 .
 
 Screenshot 2025-09-20 at 11 29 24 am . User opens the extension and types their workflow description as a text prompt. ✍️

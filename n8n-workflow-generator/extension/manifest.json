@@ -1,0 +1,39 @@
+{
+    "manifest_version": 3,
+    "name": "n8n AI Workflow Generator",
+    "version": "1.0.0",
+    "description": "Generate n8n workflows from natural language using free Gemini AI",
+    "permissions": [
+      "activeTab",
+      "storage",
+      "scripting"
+    ],
+    "host_permissions": [
+      "https://*.n8n.io/*",
+      "https://localhost:5678/*",
+      "http://localhost:5678/*",
+      "https://generativelanguage.googleapis.com/*"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [{
+      "matches": [
+        "https://*.n8n.io/*", 
+        "https://localhost:5678/*",
+        "http://localhost:5678/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }],
+    "action": {
+      "default_popup": "popup.html",
+      "default_title": "n8n AI Workflow Generator"
+    },
+    "icons": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  }

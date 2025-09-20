@@ -3,6 +3,16 @@
 A sleek & friendly React chatbot app that integrates multiple large language models (LLMs) through the OpenRouter API.
 Users can select and switch between several free & preview AI models seamlessly! 🌈
 
+SCREENSHOTS
+
+<img width="1440" height="900" alt="Screenshot 2025-09-21 at 12 23 52 am" src="https://github.com/user-attachments/assets/79d7a83d-9c86-4267-956f-d13e8001b5f2" />
+.
+
+<img width="1440" height="900" alt="Screenshot 2025-09-21 at 12 23 59 am" src="https://github.com/user-attachments/assets/ff7f701b-b01f-4f6b-918a-9ebec55cd32e" />
+.
+
+<img width="1440" height="900" alt="Screenshot 2025-09-21 at 12 24 22 am" src="https://github.com/user-attachments/assets/c16474ef-05fd-401a-836e-8df5af3a73cb" />
+.
 
 ✨ Features
 
@@ -24,6 +34,7 @@ OpenAI GPT-4o, Google Gemini, NVIDIA Nemotron Nano, and more!
 
 
 🚀 Getting Started
+.
 
 Prerequisite
 Node.js (latest LTS recommended)
@@ -51,6 +62,8 @@ npm start
 Open http://localhost:3000 and chat away! 🎉
 
 🛠️ Usage
+.
+
 Select an AI model from dropdown
 
 Type your messages and hit "Send" or press Enter

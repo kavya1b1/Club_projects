@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+Multi-Model Chatbot (OpenRouter Free Models and Preview)
+A modern, visually appealing, React-based chatbot web app that integrates multiple large language models (LLMs) using the OpenRouter API.
+Users can select and switch between various free and preview models seamlessly.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+Clean and friendly chatbot UI with animated background bubbles
 
-## Available Scripts
+Support for multiple AI models from OpenRouter, including OpenAI GPT-4o, Google Gemini, NVIDIA Nemotron Nano, and others
 
-In the project directory, you can run:
+Conversation view with user and bot avatars, timestamps, and typing indicators
 
-### `npm start`
+Model selector with color-coded badges for easy identification
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Environment variable-based API key management for security
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Rate-limit and error handling with user feedback
 
-### `npm test`
+Lightweight and easy to customize React frontend, no Tailwind CSS
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Getting Started
+Prerequisites
+Node.js and npm installed on your machine
 
-### `npm run build`
+An OpenRouter API key (freely available from https://openrouter.ai/ after sign-up)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Setup
+Clone the repository or initialize your React project
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Create a .env file in your project root and add:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+text
+REACT_APP_OPENROUTER_API_KEY=your_openrouter_api_key_here
+Install dependencies:
 
-### `npm run eject`
+bash
+npm install
+Start the development server:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+bash
+npm start
+Open http://localhost:3000 in your browser
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Usage
+Select your preferred AI model from the dropdown
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Type your message and send
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Chat responses will appear from the selected model
 
-## Learn More
+Switch models anytime to compare responses or avoid rate limits
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Project Structure
+text
+/src
+  /App.js            # Main React component with chatbot logic
+  /App.css           # Custom CSS styles including animated background
+  /index.js          # React app entry point
+/.env                # Environment variables (API key; not committed)
+/.gitignore          # Ignores node_modules, .env, etc.
+package.json         # Project dependencies and scripts

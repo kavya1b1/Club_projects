@@ -1,0 +1,255 @@
+/* Base container with radial gradient background and bubbles */
+.app-bg {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: radial-gradient(ellipse at 20% 30%, #eaf2fb 0%, #dbeafe 52%, #e7eaf8 100%);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  overflow: hidden;
+  position: relative;
+  padding: 20px 0;
+}
+
+/* Floating decorative background circles */
+.bubbles-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.45;           /* Increased opacity for visibility */
+  filter: blur(1.2px);     /* Sharper blur for lively effect */
+  animation: floatbubble linear infinite;
+}
+.bubble1 { left: 8vw; top: 13vh; width: 120px; height: 120px; background: #7ec7f9; animation-duration: 35s;}     /* Strong sky blue */
+.bubble2 { left: 68vw; top: 17vh; width: 90px; height: 90px; background: #32e6b3; animation-duration: 29s;}      /* Bright aqua */
+.bubble3 { left: 21vw; top: 78vh; width: 110px; height: 110px; background: #e4a1f7; animation-duration: 38s;}    /* Pastel lilac */
+.bubble4 { left: 81vw; top: 49vh; width: 85px; height: 85px; background: #ffde80; animation-duration: 31s;}      /* Vivid yellow */
+.bubble5 { left: 57vw; top: 88vh; width: 130px; height: 130px; background: #f9deaf; animation-duration: 45s;}    /* Warm peach */
+.bubble6 { left: 42vw; top: 11vh; width: 79px; height: 79px; background: #99a2fc; animation-duration: 20s;}      /* Soft violet */
+.bubble7 { left: 76vw; top: 66vh; width: 108px; height: 108px; background: #fa9ebc; animation-duration: 36s;}    /* Pink */
+@keyframes floatbubble {
+  0%   { transform: translateY(0);}
+  50%  { transform: translateY(-38px) scale(1.13);}
+  100% { transform: translateY(0);}
+}
+
+/* Chat card container with dark styling */
+.chat-card {
+  background: #212b42; /* Deep navy */
+  margin-top: 48px;
+  border-radius: 22px;
+  box-shadow: 0 10px 36px 2px rgba(44,54,90,0.19);
+  padding: 38px 32px 20px 32px;
+  width: 100%;
+  max-width: 540px;
+  animation: popin 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+  position: relative;
+  z-index: 1;
+  border: 1.5px solid #2e3e5b;
+}
+@keyframes popin {
+  from { transform: scale(0.97) translateY(40px); opacity: 0;}
+  to   { transform: scale(1)    translateY(0);   opacity: 1;}
+}
+
+/* Titles and labels in chat card */
+.chat-title {
+  text-align: center;
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #eaeefe;
+  letter-spacing: 1px;
+}
+.selector-label {
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 7px;
+  color: #beeaf9;
+  font-size: 1rem;
+}
+.model-select {
+  width: 100%;
+  padding: 9px;
+  font-size: 1rem;
+  background: #223057;
+  color: #e0eafe;
+  border-radius: 8px;
+  border: 1.4px solid #32486c;
+  margin-bottom: 15px;
+}
+
+/* Model badge style for dark background */
+.badge-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.model-badge {
+  display: inline-block;
+  color: #aee4ff;
+  padding: 7px 18px;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 1rem;
+  background: #334269 !important;
+  letter-spacing: 0.02em;
+  box-shadow: 0 2px 8px rgba(70,60,130,0.08);
+}
+
+/* Chat history container */
+.chat-history {
+  background: #1a2032;
+  border: 1.2px solid #293356;
+  color: #e0eafe;
+  border-radius: 14px;
+  height: 330px;
+  overflow-y: auto;
+  padding: 18px 12px 18px 12px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Chat message row */
+.msg-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+.msg-row.right {
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+}
+
+/* Message bubbles for dark theme */
+.user-message, .bot-message {
+  max-width: 70vw;
+  position: relative;
+  padding: 10px 16px 6px 14px;
+  border-radius: 12px 12px 12px 4px;
+  font-size: 1.07rem;
+  white-space: pre-line;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.015);
+}
+.user-message {
+  color: #8babfc;
+  background: #313e61;
+  border: 1.1px solid #476eb1;
+}
+.bot-message {
+  color: #4fbb87;
+  background: #233f38;
+  border: 1.1px solid #62d9af;
+  border-radius: 12px 12px 4px 12px;
+}
+
+/* Message timestamp styling */
+.msg-time {
+  font-size: 0.78rem;
+  color: #8caadb;
+  display: block;
+  margin-top: 5px;
+  font-weight: 400;
+  opacity: 0.75;
+  user-select: none;
+}
+.msg-text {
+  display: block;
+  margin-top: 3px;
+}
+
+/* Avatar images next to messages */
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 1px 6px #bcd2ef3f;
+  border: 1.5px solid #3a437d;
+  background: #1f2951;
+}
+
+/* Input container */
+.input-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+/* User input field */
+.user-input {
+  flex: 1;
+  padding: 13px;
+  font-size: 1.1rem;
+  border-radius: 9px;
+  border: 1.5px solid #476eb1;
+  outline: none;
+  transition: border-color 0.3s ease;
+  background: #212b42;
+  color: #cbd6f3;
+}
+.user-input::placeholder {
+  color: #5771bb;
+}
+.user-input:focus {
+  border-color: #8babfc;
+  background: #2c3a76;
+  color: white;
+}
+
+/* Send button styles */
+.send-btn {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 11px 28px;
+  border-radius: 9px;
+  border: none;
+  background-color: #445dfb;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 3px 15px rgba(68, 93, 251, 0.4);
+  transition: background 0.25s ease;
+}
+.send-btn:hover:not(:disabled) {
+  background-color: #2a3ed9;
+}
+.send-btn:disabled {
+  background: #4051a9;
+  color: #bac8ff;
+  cursor: not-allowed;
+}
+
+/* Error message style */
+.error {
+  color: #ff6b6b;
+  font-weight: 700;
+  margin-bottom: 13px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* Typing indicator animation */
+.typing-indicator {
+  display: flex;
+  gap: 3px;
+}
+.typing-indicator span {
+  width: 8px;
+  height: 8px;
+  background: #62d9af;
+  border-radius: 50%;
+  animation: bulge 1.3s infinite alternate;
+}
+.typing-indicator span:nth-child(2) { animation-delay: 0.3s; }
+.typing-indicator span:nth-child(3) { animation-delay: 0.6s; }
+
+@keyframes bulge {
+  0%, 100% { transform: scale(0.85); }
+  50% { transform: scale(1.23); }
+}

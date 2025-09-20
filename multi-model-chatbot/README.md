@@ -5,13 +5,16 @@ Users can select and switch between several free & preview AI models seamlessly!
 
 SCREENSHOTS
 
-<img width="1440" height="900" alt="Screenshot 2025-09-21 at 12 23 52 am" src="https://github.com/user-attachments/assets/79d7a83d-9c86-4267-956f-d13e8001b5f2" />
-.
+<img width="1440" height="900" alt="Screenshot 2025-09-21 at 1 30 08 am" src="https://github.com/user-attachments/assets/74ace972-3230-4040-8709-ff59065dde07" />
 
-<img width="1440" height="900" alt="Screenshot 2025-09-21 at 12 23 59 am" src="https://github.com/user-attachments/assets/ff7f701b-b01f-4f6b-918a-9ebec55cd32e" />
 .
+<img width="1440" height="900" alt="Screenshot 2025-09-21 at 1 30 28 am" src="https://github.com/user-attachments/assets/ced32bec-2097-4d2c-9f2b-d9357a6f4e0a" />
 
-<img width="1440" height="900" alt="Screenshot 2025-09-21 at 12 24 22 am" src="https://github.com/user-attachments/assets/c16474ef-05fd-401a-836e-8df5af3a73cb" />
+
+.
+<img width="1440" height="900" alt="Screenshot 2025-09-21 at 1 29 44 am" src="https://github.com/user-attachments/assets/9c36db39-51d9-4914-a5c8-e7cad66f376b" />
+
+
 .
 
 ✨ Features
